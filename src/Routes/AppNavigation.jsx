@@ -7,12 +7,13 @@ import Showroom from '../Showroom/Showroom'
 import AppIndex from './AppIndex'
 function AppNavigation() {
   let element = useRoutes([
+    // {
+    //   path: '/',
+    //   element: <PharmacyIndex />,
+    //   children: [{ index: true }],
+    // },
     {
       path: '/',
-      element: <PharmacyIndex />,
-      children: [{ index: true }],
-    },
-    {
       element: <AppIndex />,
       children: [
         { index: true, element: <PharmacyIndex /> },

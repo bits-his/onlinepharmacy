@@ -10,7 +10,7 @@ export default function Cart() {
     // const cartddd = useSelector(state => state.cart.cartList.drugName)
     return (
         <div className=''>
-            <Row className='pharmacy_index pt-4 pb-4'>
+            <Row className='pharmacy_index pt-4 pb-4 p-0 m-0'>
                 <Col md={8}>
                     {cartList.map((item) => (
 

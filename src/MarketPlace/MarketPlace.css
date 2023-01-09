@@ -25,17 +25,17 @@
 } */
 
 .showroom_card{
-  background-color: white;
-  border: none;
-  border-radius: 0;
-  transition: 0.3s;
+  background-color: white !important;
+  border: none !important;
+  border-radius: 0 !important;
+  transition: 0.3s !important;
   margin-bottom: 30px;
 }
 
 .index_card {
   background-color: white;
-  border: none;
-  border-radius: 0;
+  border: none !important;
+  border-radius: 0 !important;
   transition: 0.3s;
   margin-bottom: 30px;
 }
@@ -90,8 +90,8 @@
 }
 
 .cart_card {
-  border-radius: 0;
-  border: none;
+  border-radius: 0 !important;
+  border: none !important;
 }
 .cart_drug_name {
   color: var(--primaryColor2);
@@ -187,7 +187,7 @@
   font-size: 20px;
 }
 .index_top_card_icons {
-  background-color: rgba(3, 65, 110, 0.068);
+  background-color: rgba(3, 65, 110, 0.068) !important;
 }
 .categories_item {
   margin: 0;
@@ -214,6 +214,7 @@
   background-color: var(--whiteColor);
   position: sticky;
   top: 0;
+  width: 100%;
   box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.5);
 
 }

@@ -8,6 +8,8 @@ import bell from "../image/bell.png";
 import help from "../image/help.png";
 import account from "../image/account.png";
 import "./MarketPlace.css";
+import '../Styles/Styles.css'
+import '../CustomFiles/InputFields.css'
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import drugcipherIcon from "../image/DCIcon5.png";
@@ -19,19 +21,19 @@ export default function PharmacyNavMenu() {
   return (
     <div className="pharmacy_nav_menu" style={{ positon: "sticky", top: 0 }}>
       {/* <h1>{JSON.stringify(total)}: lldkjd</h1> */}
-      <Row className="m-0">
+      <Row className="m-0 p-0">
         <Col md={3}>
           <img
             src={drugcipherIcon}
             alt="drugcipherlogo"
             style={{ width: 55, marginTop: 7 }}
-            onClick={() => navigate("/drug-cipher/market-place/")}
+            onClick={() => navigate("/")}
           />
           <p
             className="dc_name"
-            onClick={() => navigate("/drug-cipher/market-place/")}
+            onClick={() => navigate("/")}
           >
-            DrugCipher
+            Online Pharmacy
           </p>
         </Col>
         <Col md={6} className="">
@@ -59,7 +61,7 @@ export default function PharmacyNavMenu() {
             <div
               className="icon_div p-1"
               style={{ position: "relative" }}
-              onClick={() => navigate("/market-place/cart")}
+              onClick={() => navigate("/cart")}
             >
               <div className="absolute">
                 <span>{totalItems}</span>
