@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    /* margin: 0 auto; */
+}
+    .header-menu {
+        margin: auto 4rem;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        color: #000050;
+        font-weight: 900;
+        font-size: 1.2em;
+        
+    }
+        li {
+            cursor: pointer;
+            	list-style: none;
+	outline: none;
+        }
+        .header-login-button {
+            background-color: transparent;
+            border: none;}
+           .header-login-button:hover + #header-login-line {
+                width: 90%;
+            }
+            .header-login-line {
+				margin: 5px auto;
+				height: 4px;
+				width: 50%;
+				background-color: red;
+				border-radius: 2px;
+				transition-duration: 200ms;
+				display: block;
+			}
+            .header-register-button:hover{
+                cursor: pointer;
+            }
+
+
+.button-submit {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    cursor: pointer;
+    min-width: 40%;
+    height: auto;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color:orangered;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+}
+.register{
+    margin-bottom: 5rem ;
+}
+ #other-option-wrapper {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1rem;
+    /* margin: 0 auto; */
+    width: 75%;
+  }
+ #other-option-wrapper .line {
+    width: 30%;
+    height: 2px;
+    background-color: #d8d8d9;
+    margin-top:0.6em;
+  }
+ #other-option-wrapper #continue-with {
+    color: #9599ab;
+ }
+  
+  .icons {
+    /* display: flex; */
+    justify-content: center;
+    /* margin-bottom: 3rem; */
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+  }
+  .icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+ 
+   .fa-facebook-f {
+    border-radius: 50%;
+    background: #5d75ab;
+    color: #fff;
+    padding: 1.2rem;
+  }
+  .icons .fa-twitter {
+    border-radius: 50%;
+    background: #1da1f2;
+    color: white;
+    padding: 1.2rem;
+  }
+  
+  .icons .fa-google {
+    border-radius: 50%;
+    background: #ee5645;
+    color: #fff;
+    padding: 1.2rem;
+  }
+  .icons .fa-apple {
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    padding: 1.2rem;
+  }
+  .underline{
+    text-decoration: underline;
+    color: #9599ab;
+  }
+  .continue-with{
+    color: #000;
+  }
