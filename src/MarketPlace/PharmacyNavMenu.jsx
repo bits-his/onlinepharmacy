@@ -74,7 +74,7 @@ export default function PharmacyNavMenu() {
             <div className="icon_div p-1">
               <img src={help} alt="" />
             </div>
-            <div className="icon_div p-1">
+            <div className="icon_div p-1" onClick={() => navigate(`/register`)}>
               <span>Account</span> <img src={account} alt="" />
             </div>
           </div>
