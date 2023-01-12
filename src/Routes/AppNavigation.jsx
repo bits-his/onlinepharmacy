@@ -1,11 +1,11 @@
-import React from 'react'
-
-import { useRoutes } from 'react-router-dom'
-import Cart from '../MarketPlace/Cart'
-import PharmacyIndex from '../MarketPlace/PharmacyIndex'
-import Register from '../Register'
-import Showroom from '../Showroom/Showroom'
-import AppIndex from './AppIndex'
+import React from "react";
+import { useRoutes } from "react-router-dom";
+// import Drops from "../Drops";
+import Cart from "../MarketPlace/Cart";
+import PharmacyIndex from "../MarketPlace/PharmacyIndex";
+import Register from "../Register";
+import Showroom from "../Showroom/Showroom";
+import AppIndex from "./AppIndex";
 function AppNavigation() {
   let element = useRoutes([
     // {
@@ -14,25 +14,27 @@ function AppNavigation() {
     //   children: [{ index: true }],
     // },
     {
-      path: '/',
+      path: "/",
       element: <AppIndex />,
       children: [
         { index: true, element: <PharmacyIndex /> },
         {
-          path: '/cart',
+          path: "/cart",
           element: <Cart />,
         },
-        {path:'/register',
-        element:<Register/>
-      },
+        // {
+        //   path: "/drops",
+        //   element: <Drops/>,
+        // },
+        { path: "/register", element: <Register /> },
+
         {
-          path: '/showroom',
+          path: "/showroom",
           element: <Showroom />,
         },
-        
       ],
     },
-  ])
-  return element
+  ]);
+  return element;
 }
-export default AppNavigation
+export default AppNavigation;

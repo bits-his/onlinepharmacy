@@ -41,6 +41,20 @@ export default function Signin() {
                 <span className="line"></span>
               </div>
             </div>
+            <div className="icons">
+              <a href="#" className="facebook">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="google">
+                <i className="fab fa-google"></i>
+              </a>
+              <a href="#" className="twitter">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#" className="youtube">
+                <i className="fab fa-apple"></i>
+              </a>
+            </div>
           </>
         </form>
       </div>

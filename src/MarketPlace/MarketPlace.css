@@ -212,7 +212,7 @@
 }
 .pharmacy_nav_menu{
   background-color: var(--whiteColor);
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.5);
